@@ -1,0 +1,7 @@
+examples
+test
+.idea
+.travis.yml
+.editorconfig
+.eslintrc
+.gitignore
