@@ -1,0 +1,43 @@
+{
+  "name": "idle-maps",
+  "version": "1.0.0-alpha",
+  "description": "Google maps react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint test lib && mocha --compilers jsx:jsx-require-extension  -r ./test/helpers/jsdom.js test",
+    "start": "webpack examples/index.js examples/app.js && webpack-dev-server --no-info --content-base examples --hot --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zpratt/react-maps.git"
+  },
+  "keywords": [
+    "react",
+    "google-maps"
+  ],
+  "author": "zach pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zpratt/react-maps/issues"
+  },
+  "homepage": "https://github.com/zpratt/react-maps",
+  "devDependencies": {
+    "async-google-maps": "zpratt/async-google-maps#master",
+    "babel": "^4.7.8",
+    "babel-core": "^4.7.8",
+    "babel-loader": "^4.1.0",
+    "chai": "^2.2.0",
+    "eslint": "^0.17.1",
+    "jsdom": "^4.0.5",
+    "jsx-loader": "^0.12.2",
+    "jsx-require-extension": "^0.2.0",
+    "mocha": "^2.2.1",
+    "react": "^0.13.0",
+    "sinon": "^1.14.1",
+    "webpack": "^1.7.2",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "peerDependencies": {
+    "react": "^0.13.0"
+  }
+}
