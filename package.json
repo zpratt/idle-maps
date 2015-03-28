@@ -25,9 +25,6 @@
   "homepage": "https://github.com/zpratt/react-maps",
   "devDependencies": {
     "async-google-maps": "zpratt/async-google-maps#master",
-    "babel": "^4.7.8",
-    "babel-core": "^4.7.8",
-    "babel-loader": "^4.1.0",
     "chai": "^2.2.0",
     "eslint": "^0.17.1",
     "jsdom": "^4.0.5",
