@@ -1,4 +1,4 @@
-React components for Async Google Maps
+React components for [Async Google Maps](https://github.com/zpratt/async-google-maps)
 
 ### Not fully baked yet
 
@@ -15,6 +15,12 @@ This module is 100% test-driven. Please feel free to run the tests and critique 
 ## Usage
 
 Take a look at the examples directory for a few samples of how to use the mixins.
+
+### Running examples locally
+
+1. `npm i`
+- `npm start`
+- Navigate to [http://localhost:8080/](http://localhost:8080/)
 
 ## Documentation
 
