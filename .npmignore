@@ -4,5 +4,6 @@ test
 .travis.yml
 .editorconfig
 .eslintrc
+.eslintignore
 .gitignore
 webpack.config.js
