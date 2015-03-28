@@ -5,3 +5,4 @@ test
 .editorconfig
 .eslintrc
 .gitignore
+webpack.config.js
