@@ -1,7 +1,6 @@
 'use strict';
 
 var MapMixin = require('../lib/map-instance-mixin.jsx'),
-    GoogleMapsMixin = require('../lib/google-maps-mixin'),
 
     MapLoader = require('async-google-maps').MapLoader,
 
@@ -67,10 +66,6 @@ describe('Google Map Instance Mixin Test Suite', function () {
             domNode = renderedElement.getDOMNode();
 
         expect(domNode.className).to.equal('map-container');
-    });
-
-    it('should include the `google-maps-mixin`', function () {
-        expect(ComponentWithMixin.prototype.componentWillMount).to.equal(GoogleMapsMixin.componentWillMount);
     });
 
     it('should create a container for the google map instance', function () {
