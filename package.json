@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/zpratt/react-maps",
   "devDependencies": {
-    "async-google-maps": "zpratt/async-google-maps#master",
     "chai": "^2.2.0",
     "eslint": "^0.17.1",
     "jsdom": "^4.0.5",
@@ -38,5 +37,8 @@
   },
   "peerDependencies": {
     "react": "^0.13.0"
+  },
+  "dependencies": {
+    "async-google-maps": "^0.2.0"
   }
 }
