@@ -1,5 +1,7 @@
 React components for [Async Google Maps](https://github.com/zpratt/async-google-maps)
 
+[![Build Status](https://travis-ci.org/zpratt/idle-maps.svg)](https://travis-ci.org/zpratt/idle-maps)
+
 ### Not fully baked yet
 
 I am still working out some things with the overlay mixin.
