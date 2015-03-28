@@ -7,7 +7,7 @@
     "test": "eslint index.js webpack.config.js test lib examples && mocha --compilers jsx:jsx-require-extension  -r ./test/helpers/jsdom.js test",
     "build": "npm test && webpack index.js dist/idle-maps.js",
     "release": "npm run build && COMPRESS=true webpack index.js dist/idle-maps.min.js",
-    "start": "npm build && webpack examples/index.jsx examples/app.js && webpack-dev-server --no-info --content-base examples --hot --colors"
+    "start": "npm run build && webpack examples/index.jsx examples/app.js && webpack-dev-server --no-info --content-base examples --hot --colors"
   },
   "repository": {
     "type": "git",
