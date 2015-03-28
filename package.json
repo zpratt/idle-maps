@@ -1,7 +1,7 @@
 {
   "name": "idle-maps",
   "version": "1.0.1-alpha",
-  "description": "Google maps react components",
+  "description": "React components for asynchronous google maps",
   "main": "dist/idle-maps.js",
   "scripts": {
     "test": "eslint index.js webpack.config.js test lib examples && mocha --compilers jsx:jsx-require-extension  -r ./test/helpers/jsdom.js test",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zpratt/react-maps.git"
+    "url": "https://github.com/zpratt/idle-maps.git"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "zach pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zpratt/react-maps/issues"
+    "url": "https://github.com/zpratt/idle-maps/issues"
   },
-  "homepage": "https://github.com/zpratt/react-maps",
+  "homepage": "https://github.com/zpratt/idle-maps",
   "devDependencies": {
     "chai": "^2.2.0",
     "eslint": "^0.17.1",
