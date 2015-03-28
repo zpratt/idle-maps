@@ -15,7 +15,7 @@ var GoogleMapsMixin = require('../lib/google-maps-mixin'),
     ElementWithMixin,
     sandbox;
 
-describe('Test Suite', function () {
+describe('Google Maps API Mixin Test Suite', function () {
     beforeEach(function () {
         sandbox = sinon.sandbox.create();
 
