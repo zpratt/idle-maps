@@ -1,6 +1,6 @@
 {
   "name": "idle-maps",
-  "version": "1.0.0-alpha",
+  "version": "1.0.1-alpha",
   "description": "Google maps react components",
   "main": "dist/idle-maps.js",
   "scripts": {
