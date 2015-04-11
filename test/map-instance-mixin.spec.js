@@ -10,8 +10,8 @@ var MapMixin = require('../lib/map-instance-mixin.jsx'),
     sinon = require('sinon'),
     expect = require('chai').expect,
 
-    ComponentWithMixin,
-    ElementWithMixin,
+    MapComponent,
+    MapElement,
 
     expectedMapOptions,
     mapIdleCallback,
@@ -46,13 +46,13 @@ describe('Google Map Instance Mixin Test Suite', function () {
         setupStubs();
         createFixtures();
 
-        ComponentWithMixin = React.createClass({
+        MapComponent = React.createClass({
             mixins: [MapMixin],
 
             idle: idleSpy
         });
 
-        ElementWithMixin = React.createElement(ComponentWithMixin, {
+        MapElement = React.createElement(MapComponent, {
             mapOptions: expectedMapOptions
         });
     });
@@ -62,7 +62,7 @@ describe('Google Map Instance Mixin Test Suite', function () {
     });
 
     it('should create a container for the google map instance', function () {
-        var renderedElement = ReactTestUtils.renderIntoDocument(ElementWithMixin),
+        var renderedElement = ReactTestUtils.renderIntoDocument(MapElement),
             domNode = renderedElement.getDOMNode();
 
         expect(domNode.className).to.equal('map-container');
@@ -73,7 +73,7 @@ describe('Google Map Instance Mixin Test Suite', function () {
 
         sinon.assert.notCalled(MapLoader.create);
 
-        renderedElement = ReactTestUtils.renderIntoDocument(ElementWithMixin);
+        renderedElement = ReactTestUtils.renderIntoDocument(MapElement);
 
         sinon.assert.calledOnce(MapLoader.create);
         sinon.assert.calledWith(MapLoader.create, renderedElement.getDOMNode(), expectedMapOptions);
@@ -82,7 +82,7 @@ describe('Google Map Instance Mixin Test Suite', function () {
     it('should notify the component extended with the mixin when the map is idle', function () {
         sinon.assert.notCalled(idleSpy);
 
-        ReactTestUtils.renderIntoDocument(ElementWithMixin);
+        ReactTestUtils.renderIntoDocument(MapElement);
 
         mapIdleCallback(fakeMapInstance);
 
