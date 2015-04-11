@@ -17,7 +17,6 @@ module.exports = {
     render: function () {
         return (
             <div className="map-container">
-                <div className="test"></div>
             </div>
         );
     }
